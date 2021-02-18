@@ -1,12 +1,20 @@
+import React, { useState } from 'react';
 import './BoxContainer.css';
+import { CardContext } from './CardContext';
 import Box from '../Box/Box';
+import Input from '../Input/Input';
 
-function BoxContainer(props) {
+
+function BoxContainer() {
+  const initialString = '';
+  const [str, setStr] = useState(initialString);
   return (
-    <div>
-      <Input />
-      { props.str.replace(/\s/g, "").split().map((el, index) => <Box val={el} key={index}/>) }
-    </div>
+    <CardContext.Provider value={{ str, setStr }}>
+      <div className="main">
+        <Input />
+        <Box />
+      </div>
+    </CardContext.Provider>
   );
 }
 

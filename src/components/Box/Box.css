@@ -1,0 +1,7 @@
+.box {
+  border: 6px solid grey; 
+}
+
+.box:nth-child(3n) {
+  border: 6px solid aqua; 
+}
