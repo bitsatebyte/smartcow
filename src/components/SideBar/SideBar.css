@@ -1,0 +1,27 @@
+#sideBarMenu {
+  height: 100vh;
+  width: 250px;
+  margin-top: 50px;
+  background-color: aqua;
+  position: fixed;
+  transform: translateX(-250px);
+  transition: transform 250ms ease-in-out;
+}
+
+#openSideBarMenu:checked ~ #sideBarMenu {
+  transform: translateX(0);
+}
+
+#openSideBarMenu {
+  transition: all 0.3s;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+}
+
+@media (max-width: 600px) {
+  #sideBarMenu {
+    display: none;
+  }
+}

@@ -1,18 +1,17 @@
+import React , { useState } from 'react';
 import './Input.css';
-import 'bootstrap/dist/css/bootstrap.css';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
+// import 'bootstrap/dist/css/bootstrap.css';
 
-const handleChange = e => {
-  //use lodash and debounce this function so it doesn't fire so often
-  
-};
 
 function Input() {
+  const initialString = '';
+  const [str, setStr] = useState(initialString);
+  const handleChange = e => setStr(e.target.value);
+
   return (
     <input type="text" id="somestr" name="String"
-     minlength="0" maxlength="20"
-     size="20"
+     minLength="0" maxLength="20"
+     size="20" value={str}
      onChange={ handleChange } />
   );
 }
