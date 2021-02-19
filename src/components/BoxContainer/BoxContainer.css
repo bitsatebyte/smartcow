@@ -1,6 +1,13 @@
 .main {
-  margin: 0 auto;
   display: block;
   height: 100%;
   margin-top: 60px;
+  margin-left: 260px;
+}
+
+@media (max-width: 600px) {
+  .main {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

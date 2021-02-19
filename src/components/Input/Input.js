@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import './Input.css';
 import { CardContext } from '../BoxContainer/CardContext';
+import './Input.css';
 
 function Input() {
   const { str } = useContext(CardContext);
@@ -9,8 +9,7 @@ function Input() {
 
   return (
     <input type="text" id="somestr" name="String"
-      minLength="0" maxLength="20"
-      size="20" value={str}
+      value={str} placeholder="  STRING                    (input)"
       onChange={handleChange} />
   );
 }

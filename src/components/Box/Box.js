@@ -1,13 +1,12 @@
 import React, { useContext } from 'react';
-import './Box.css';
 import { CardContext } from '../BoxContainer/CardContext';
+import './Box.css';
 
 const mapStringToBoxes = str => {
   const ret = str.map((el, index) => {
-    console.log(el);
     return (
       <li className="box" key={index}>
-        {el}
+        <span>{el}</span>
       </li>
     );
   });
