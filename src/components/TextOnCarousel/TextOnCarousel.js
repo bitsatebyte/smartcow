@@ -2,13 +2,7 @@ import './TextOnCarousel.css'
 
 function TextOnCarousel() {
   return (
-    <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/WbWhpfXisZw"
-      title="some"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <div id="carousel-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, architecto!</div>
   );
 }
 
