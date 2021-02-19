@@ -26,6 +26,6 @@
 
 @media (max-width: 415px) {
   .boxMain {
-    justify-content: center;
+    justify-items: center;
   }
 }

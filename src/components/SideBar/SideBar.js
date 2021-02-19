@@ -7,7 +7,9 @@ function SideBar() {
     <div className="sideBarMain">
       <input type="checkbox" className="openSideBar" id="openSideBarMenu" />
       <label htmlFor="openSideBarMenu" className="sideBarToggle">
-        <div className="fas">close</div>
+        <div className="fas">
+          close
+        </div>
       </label>
       <div id="sideBarMenu">
         <div className="sidebar">
