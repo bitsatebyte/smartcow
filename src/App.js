@@ -1,15 +1,20 @@
 import './App.css';
-import TopBar from './components/TopBar/TopBar';
-import SideBar from './components/SideBar/SideBar';
-import BoxContainer from './components/BoxContainer/BoxContainer';
+import {
+  BrowserRouter as Router,
+  Route
+} from "react-router-dom";
+import { createBrowserHistory } from 'history';
+import Home from './components/Home/Home';
+import CarouselContainer from './components/CarouselContainer/CarouselContainer';
+
+const history = createBrowserHistory();
 
 function App() {
   return (
-    <div>
-      <TopBar />
-      <SideBar />
-      <BoxContainer />
-    </div>
+    <Router history={history}>
+      <Route path="/" exact component={Home} />
+      <Route path="/carousel" exact component={CarouselContainer} />
+    </Router>
   );
 }
 

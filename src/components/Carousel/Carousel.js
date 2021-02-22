@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import Glider from 'glider-js';
+import 'glider-js/glider.css';
 import './Carousel.css';
 
 
@@ -8,12 +9,13 @@ function Carousel() {
   useEffect(() => {
     new Glider(document.querySelector('.glider'), {
       duration: 1,
-      scrollLock: false
+      scrollLock: false,
+      slidesToShow: 1
     });
 
-    return function () {
-      Glider(document.querySelector('.glider')).destroy();
-    };
+    // return function () {
+    //   Glider(document.querySelector('.glider')).destroy();
+    // };
   }, []);
 
   return (

@@ -1,4 +1,5 @@
 import './TopBar.css';
+import { Link } from 'react-router-dom';
 
 
 function TopBar() {
@@ -14,8 +15,8 @@ function TopBar() {
       </div>
 
       <div className="nav-links">
-        <a href="//github.com/bitsatebyte" target="_blank" rel="noreferrer">Github</a>
-        <a href="https://in.linkedin.com/in/hariveturi" target="_blank" rel="noreferrer">LinkedIn</a>
+        <Link to="/">Home</Link>
+        <Link to="/carousel">Carousel</Link>
       </div>
     </div>
   );
