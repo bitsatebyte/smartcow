@@ -1,0 +1,8 @@
+.mainCarousel  img {
+  width: 100vw;
+  height: 500px;
+}
+
+.mainCarousel {
+  top: 50px;
+}
