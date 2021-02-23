@@ -4,7 +4,6 @@ import Box from '../Box/Box';
 import Input from '../Input/Input';
 import './BoxContainer.css';
 
-
 function BoxContainer() {
   const initialString = '';
   const [str, setStr] = useState(initialString);
