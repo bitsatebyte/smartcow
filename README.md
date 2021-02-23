@@ -1,10 +1,14 @@
-# SmartCow - Task 1
+![alt text][logo]
+
+[logo]: https://smartcow.ai/staticfiles/images/horiz-logo-yellow.png "React Assignment: SmartCow"
+
+## SmartCow - Task 1
 Has 4 components -
-  + Navigation Menu : TopBar
-  + Side Menu : SideBar
-  + Box Container : BoxContainer
-    - Input field : Input
-    - Boxes with data: Box
+  + Navigation Menu : ***TopBar***
+  + Side Menu : ***SideBar***
+  + Box Container : ***BoxContainer***
+    - Input field : ***Input***
+    - Boxes with data : ***Box***
 
 Box Container holds the state for the string to be passed to its child components through react context: Input and Box.
 
@@ -18,7 +22,7 @@ The Box component has a method called mapStringToBoxes that returns a list of '\
 <br>
 <br>
 
-# SmartCow - Task 2
+## SmartCow - Task 2
 Has 4 components - 
   + Carousel Components Container : Carousel Container
   + Carousel : Carousel
@@ -29,4 +33,15 @@ Carousel was implemented using flickity library.
 
 The plan to make text visible, given that images are dynamic can be achieved using an image color extractor library - in this case, 'rgbaster'.
 
-The library itself does not directly give a contrasting color that goes well with the banner image but instead gives the dominant colour in the image and the colour palette of it. This can then be used to determine which colour MIGHT complement with the banner image.
+The library itself does not directly give a contrasting color that goes well with the banner image but instead gives the dominant colour in the image and the colour palette of it. This can then be used to determine which colour MIGHT complement with the banner image using colour wheel theory.
+
+## NOTES:
+Luma represents the brightness in an image (the "black-and-white" or achromatic portion of the image). It is a weighted sum of the R, G, and B values, adjusted for human perception of relative brightness, apparently common in video applications
+
+<br>
+
+### References
+
+1. [Calculating contrasting colours in JS](https://stackoverflow.com/questions/635022/calculating-contrasting-colours-in-javascript)
+
+2. [Luma (Video)](https://en.wikipedia.org/wiki/Luma_%28video%29)

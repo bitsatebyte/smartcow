@@ -1,8 +1,8 @@
-import './TextOnCarousel.css'
+import './TextOnCarousel.css';
 
 function TextOnCarousel() {
   return (
-    <div id="carousel-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, architecto!</div>
+    <h3 id="carousel-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, architecto!</h3>
   );
 }
 
