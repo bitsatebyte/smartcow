@@ -10,6 +10,7 @@ function Input() {
   return (
     <input type="text" id="somestr" name="String"
       value={str} placeholder="  STRING                    (input)"
+      data-testid="box-input"
       onChange={handleChange} />
   );
 }
