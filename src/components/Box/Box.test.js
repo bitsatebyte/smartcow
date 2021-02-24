@@ -1,12 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { act, render, fireEvent } from '@testing-library/react';
-import CardContext from '../BoxContainer/CardContext';
+import { render, fireEvent, within } from '@testing-library/react';
 
 import BoxContainer from '../BoxContainer/BoxContainer';
-import Box from './Box';
-import Input from '../Input/Input';
 
-it("renders without crashing", () => {
+it("Renders without crashing", () => {
+  const { getByRole } = render(<BoxContainer />);
+  expect(getByRole('list', { name: /boxes/i, })).toBeInTheDocument();
+});
 
+it("Renders 5 boxes", () => {
+  const { getByTestId, getByRole } = render(<BoxContainer />);
+  fireEvent.change(getByTestId('box-input'), { target: { value: 'hello' } });
+  const { getAllByRole } = within(getByRole('list', { name: /boxes/i, }));
+  const items = getAllByRole('listitem');
+  expect(items.length).toBe(5);
+});
+
+it("Tests rendered text in boxes", () => {
+  const { getByRole, getByTestId } = render(<BoxContainer />);
+  fireEvent.change(getByTestId('box-input'), { target: { value: 'smartcow' } });
+  const { getAllByRole } = within(getByRole('list', { name: /boxes/i, }));
+  const items = getAllByRole('listitem');
+  const formedString = items.map(item => item.textContent);
+  expect(formedString).toMatchInlineSnapshot(`
+    Array [
+      "s",
+      "m",
+      "a",
+      "r",
+      "t",
+      "c",
+      "o",
+      "w",
+    ]
+  `);
 });

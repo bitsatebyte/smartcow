@@ -18,7 +18,7 @@ function Box() {
   const boxes = mapStringToBoxes(str.replace(/\s/g, "").split(''));
   return (
     <div>
-      <ul className="boxMain">
+      <ul className="boxMain" aria-label="boxes">
         {str.length ? boxes : ''}
       </ul>
     </div>
