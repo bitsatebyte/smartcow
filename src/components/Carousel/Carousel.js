@@ -22,7 +22,7 @@ async function calculateComplementaryColorForBanner(path) {
 const mapImagesToDivs = arr => {
   const ret = arr.map((el, index) => {
     return (
-      <img src={el} alt={index}></img>
+      <img src={el} alt={index} key={index}></img>
     )
   });
 
