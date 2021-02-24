@@ -10,7 +10,7 @@ function Input() {
   return (
     <input type="text" id="somestr" name="String"
       value={str} placeholder="  STRING                    (input)"
-      data-testid="box-input"
+      aria-label="box-input"
       onChange={handleChange} />
   );
 }

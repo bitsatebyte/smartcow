@@ -9,16 +9,16 @@ it("Renders without crashing", () => {
 });
 
 it("Renders 5 boxes", () => {
-  const { getByTestId, getByRole } = render(<BoxContainer />);
-  fireEvent.change(getByTestId('box-input'), { target: { value: 'hello' } });
-  const { getAllByRole } = within(getByRole('list', { name: /boxes/i, }));
+  const { getByRole } = render(<BoxContainer />);
+  fireEvent.change(getByRole('textbox', { name: /box-input/i }), { target: { value: 'hello' } });
+  const { getAllByRole } = within(getByRole('list', { name: /boxes/i }));
   const items = getAllByRole('listitem');
   expect(items.length).toBe(5);
 });
 
 it("Tests rendered text in boxes", () => {
-  const { getByRole, getByTestId } = render(<BoxContainer />);
-  fireEvent.change(getByTestId('box-input'), { target: { value: 'smartcow' } });
+  const { getByRole } = render(<BoxContainer />);
+  fireEvent.change(getByRole('textbox', { name: /box-input/i }), { target: { value: 'smartcow' } });
   const { getAllByRole } = within(getByRole('list', { name: /boxes/i, }));
   const items = getAllByRole('listitem');
   const formedString = items.map(item => item.textContent);
