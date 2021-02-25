@@ -9,7 +9,7 @@ function BoxContainer() {
   const [str, setStr] = useState(initialString);
   return (
     <CardContext.Provider value={{ str, setStr }}>
-      <div className="main">
+      <div className="main" id="box-container">
         <Input />
         <Box />
       </div>

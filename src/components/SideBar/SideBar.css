@@ -1,3 +1,9 @@
+@import url('https://css.gg/css?=sidebar-open|close-o');
+
+.gg-close-o, .gg-sidebar-open {
+  color: white;
+}
+
 #sideBarMenu {
   height: 100vh;
   width: 250px;
