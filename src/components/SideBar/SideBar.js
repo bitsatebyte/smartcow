@@ -29,6 +29,11 @@ function SideBar() {
       </label>
       <div id="sideBarMenu">
         <div className="sidebar">
+          <ul className="sideBarItems">
+            <li><a href="https://smartcow.ai/en/" target="_blank" rel="noreferrer">Smartcow</a></li>
+            <li><a href="https://github.com/bitsatebyte" target="_blank" rel="noreferrer">My Github</a></li>
+            <li><a href="https://www.linkedin.com/in/hariveturi/" target="_blank" rel="noreferrer">My LinkedIn</a></li>
+          </ul>
         </div>
       </div>
     </div>
