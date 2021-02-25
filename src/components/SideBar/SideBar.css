@@ -20,7 +20,7 @@
 
 .sideBarToggle {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
   top: 13px;
   left: 30px;
 }
