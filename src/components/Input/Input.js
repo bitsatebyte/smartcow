@@ -9,7 +9,7 @@ function Input() {
 
   return (
     <input type="text" id="somestr" name="String"
-      value={str} placeholder="  Input any string ...                    "
+      value={str} placeholder="  Input any string ..."
       aria-label="box-input"
       onChange={handleChange} />
   );
