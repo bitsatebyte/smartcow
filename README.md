@@ -14,8 +14,6 @@ The Box component has a method called mapStringToBoxes that returns a list of '\
 
 >NOTE: coloring for every 3rd boxed element was done using css:nth-child selector and display was set to grid for box layout.
 
-> AS A TEMPORARY FIX, I'VE USED TEXT FOR SIDEBAR OPENING AND CLOSING WHICH CAN THEN LATER BE SWAPPED FOR AN ICON  
-
 <br>
 
 ## SmartCow - Task 2
