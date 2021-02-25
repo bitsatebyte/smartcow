@@ -29,3 +29,10 @@ Carousel was implemented using flickity library.
 
 Image's brightness was dimmed to 50% and then white text overlay  
 was used to make text legible on dynamic images.
+
+<br>
+
+## Tests
+Tests for UI components cannot be unit tested. For those that could be, tests have been written.  
+
+For container components, only render tests have been written to check if they render successfully.
