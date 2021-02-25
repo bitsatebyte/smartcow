@@ -1,6 +1,6 @@
 .mainCarousel  img {
   width: 100vw;
-  height: 180px;
+  height: 450px;
   filter: brightness(0.5);
 }
 
@@ -13,7 +13,7 @@
 }
 
 .flickity-viewport {
-  height: 180px !important;
+  height: 450px !important;
 }
 
 .flickity-slider:before {
