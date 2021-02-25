@@ -1,6 +1,4 @@
-![alt text][logo]
-
-[logo]: https://smartcow.ai/staticfiles/images/horiz-logo-yellow.png "React Assignment: SmartCow"
+<img src="https://smartcow.ai/staticfiles/images/horiz-logo-yellow.png" alt="smartcow" width="200"/>
 
 ## SmartCow - Task 1
 Has 4 components -
